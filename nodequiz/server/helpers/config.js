@@ -16,7 +16,7 @@ config.database = {};
 config.database.username = 'gjvance';
 config.database.password = 'password1';
 config.database.port = '15753';
-config.database.url = 'ds15753.mlab.com';
+config.database.url = 'ds115753.mlab.com';
 config.database.name = 'nodequiz';
 
 

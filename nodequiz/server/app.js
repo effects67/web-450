@@ -9,7 +9,7 @@ const config = require('./helpers/config');
 const homeRouter = require('./routes/home-router');
 
 /**
- * MongoDB setup
+ * MongoDB setup CHANGE THIS PLEASE
  */
 mongoose.connect('mongodb://' + config.database.username + ':'
   + config.database.password + '@'
