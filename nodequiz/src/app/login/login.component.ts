@@ -27,7 +27,6 @@ import { Component, OnInit } from '@angular/core';
                       </mat-card-content>
                 
                       <mat-card-actions class="frm-login-actions">
-                        <button mat-flat-button color="warn" style="margin:5px">Clear</button>
                         <button mat-flat-button color="warn">Sign In</button>
                       </mat-card-actions>
                     </mat-card>
