@@ -6,11 +6,11 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
-    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-toolbar color="primary">Take A Quiz!</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="../slide">Continuous Integration</a>
-      <a mat-list-item href="#">Tech Value Stream</a>
-      <a mat-list-item href="#">Microservices</a>
+      <a mat-list-item routerLink="../quiz_ci">Continuous Integration</a>
+      <a mat-list-item routerLink="../quiz_stream">Tech Value Stream</a>
+      <a mat-list-item routerLink="../quiz_micro">Microservices</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -24,15 +24,13 @@
         <mat-icon aria-label="Side nav toggle icon">Take A Quiz!</mat-icon>
       </button>
       <div fxFlex></div>
-      <button mat-button class="toolbar__icon-button mat-button">
-        <mat-icon>web</mat-icon>
-        <span style="margin-left: 5px !important;">450</span>
-      </button>
+
+      <button mat-button class="mat-button">
+          <a class="md" href="https://github.com/effects67/web-450">NodeQuiz Git</a>
+        </button>
+
       <button mat-button class="mat-button" routerLink="../slide">
         Learning Materials
-      </button>
-      <button mat-button class="mat-button">
-        Contact Us
       </button>
   
       <button mat-button class="mat-button">

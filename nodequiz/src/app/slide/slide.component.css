@@ -1,1 +1,12 @@
 .wrapper { width: 100%; margin-top: 10%; }
+
+a:link {
+    text-decoration: none;
+};
+
+h5{
+    color: white;
+}
+a:hover{
+    color: magenta;
+}
