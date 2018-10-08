@@ -1,0 +1,39 @@
+
+
+question 
+3 Lead time is a subset of the _____ stream. value business technology financial
+4 When a change is _____ and deployed, the lead time ends. online finished bug-free operational
+5 Processing time is also known as task or _____ time. touch coding crunch troubleshooting
+6 Processing time begins when? When an engineer starts working on the project, Whenever a customer complains, Whenever a ticket is submitted, Processing time has no beginning
+7 Processing time ends when? When the work is completed, Whenever the working day is over, Whenever it is passed on to another employee, Processing time never ends
+8 After development, enginners enter a _____ phase. Testing Documentation Revamping Recoding
+9 Which factors lead to long deployment times? Numerous tests Long production phase Manual/human work All the above
+10 Use _____ to gauge which part of the stream is complete and accurate. percent accomplished/completed, percent completed/accomplished, testing results, supervisor approval
+
+
+CI
+
+1 What seperates the IT industry from other industries? IT never stops developing, Cost variables, Geographic limitations, Energy requirements
+2 What is the springboard for applications? Initial launch, Shutdown, Server Restart, Monthly Sales
+3 _____ is the term for repeated changes being implemented. Continuous Integration, Careful Planning, Optimal Uptime, Value Stream
+4 Developers should check what when making changes? Functionality, Marketing, Display, Orientation
+5 _____ must support continual changes within the industry. Culture, The media, Education, Investors
+6 Continuous Integrational is usually followed by _____. Continous Deployment, time off, autopilot management, restarting systems
+7 What core principle of DevOps supports Continual Integration? Agile development, Plan first, Communication is key, Saving time and money
+8 What are some benefits of CI? Rapid delivery, Easier configuration, Quicker initilization, All the above
+9 Overcoming the _____ gap is key to solving CI problems. Distance, Communication, Creativity, Standby
+10 What is an easy way to facilitate changes within CI? Delegate management position, Apply codes when they are done, Double check work, Start work early
+
+Microservices 
+
+1 Microservices are a(n) _____ style. Architectural, Commerce, Business, Commercial
+2 What controls the virtual path in applications? API Gateway, Key code, Silk Road, Password
+3 What do users use to access the pathway? Tokens, Bits, Bytes, User knowledge
+4 What are some perks of microservices? Flexibility, Security, Independence, All of the above
+5 API Gateway is a form of _____. Security, Flexibility, Creativity, 
+6 If one service is closed, the others can remain open thanks to _____. Independence, Security, Flexibility, Creativity
+7 Deployment of microservices depends on _____. Cost and resources, Time restraints, Ambition, Foresight
+8 Microservices should not be _____ for needs higher than their own. scaled, used, purchased, tested
+9 _____ is a great example of scaled microservices. Duplication, innovation, creation, contemplation
+10 What is the core benefit from having microservices? Efficiency, Large stacks of code, Newer technology, optimal results
+
