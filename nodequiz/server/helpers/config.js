@@ -13,8 +13,8 @@ config.web.secret = 'topsecret';
  *
  */
 config.database = {};
-config.database.username = 'gjvance';
-config.database.password = 'password1';
+config.database.username = 'bilbo';
+config.database.password = 'baggins1';
 config.database.port = '15753';
 config.database.url = 'ds115753.mlab.com';
 config.database.name = 'nodequiz';
