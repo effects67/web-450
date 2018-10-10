@@ -17,12 +17,9 @@ import { Component, OnInit } from '@angular/core';
                       <mat-card-content class="frm-login-body">
                         <div class="login1">
                             <mat-form-field>
-                                <input type="text" matInput placeholder="Username">
+                                <input type="text" matInput placeholder="Employee ID">
                               </mat-form-field> <br>
-                      
-                              <mat-form-field>
-                                <input type="password" matInput placeholder="Password">
-                              </mat-form-field>
+
                         </div>
                       </mat-card-content>
                 

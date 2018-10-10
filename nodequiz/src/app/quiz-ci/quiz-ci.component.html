@@ -1,3 +1,5 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+
 <div class="container" style="padding-left:20px">
   <h1>
   Continuous Integration Quiz
@@ -38,7 +40,7 @@
     <h3>Question 4: Developers should check what when making changes?</h3>
         
         <input type="radio" name="q4" value="0"> Marketing<br>  
-        <input type="radio" name="q4" value="0"> Display<br>  .
+        <input type="radio" name="q4" value="0"> Display<br>  
         <input type="radio" name="q4" value="10"> Functionality<br>
         <input type="radio" name="q4" value="0"> Orientation<br><br> 
   
@@ -81,9 +83,33 @@
         <input type="radio" name="q10" value="10"> Delegate management positions<br> 
         <input type="radio" name="q10" value="0"> Start work early<br><br>  
 
-    <button mat-raised-button style="float:right;margin-right: 80px; margin-bottom:80px;">Submit</button>
+    <button mat-raised-button style="float:right;margin-right: 80px; margin-bottom:80px;" onclick="function quizCi();" type="submit">Submit</button>
   
   
   </div>
+
+  <script>
+
+  function quizCi(){
+ 
+ //starting score of 0
+ var score = 0;
+     //combine questions by group, getting on answer per group, holds up to 10 questions    
+     for(a = 1; a < 11; a+=1) {
+         question= document.getElementsByName('q'+a);
+         for(b = 0; b < question.length; b+=1) {
+             input = question[b];
+             // 2 conditions to be met: value must be 1 and it must be checked
+             if(input.value === "10" && input.checked==true) {
+                 score+=10;
+             }
+         }
+     }
+ alert("Your score is" + score);
+}
+  </script>
+
+
+</form>
 
  

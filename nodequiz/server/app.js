@@ -10,12 +10,13 @@ const homeRouter = require('./routes/home-router');
 
 /**
  * MongoDB setup CHANGE THIS PLEASE
+ * 
+ * mongodb://<dbuser>:<dbpassword>@ds115753.mlab.com:15753/nodequiz
+ * 
+ * mongoose.connect('mongodb://bilbo:baggins1@ds115753.mlab.com:15753/nodequiz',
  */
-mongoose.connect('mongodb://' + config.database.username + ':'
-  + config.database.password + '@'
-  + config.database.url + ':'
-  + config.database.port + '/'
-  + config.database.name, {promiseLibrary: require('bluebird'), useNewUrlParser: true})
+mongoose.connect('mongodb://bilbo:baggins1@ds115753.mlab.com:15753/nodequiz',
+  {promiseLibrary: require('bluebird'), useNewUrlParser: true})
   .then(() => logger.debug('Connection to the MongoDB instance was successful'))
   .catch((err) => logger.debug('MongoDB Error: ' + err));
 
