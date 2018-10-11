@@ -7,7 +7,19 @@ import { Component } from '@angular/core';
 })
 export class QuizCiComponent {
 
-  quizCi(formData){
-    if(formData.value){}
+score=0;
+
+onSubmit(formData){
+  if (formData.checkGroup.q1){
+    console.log(this.score+=10);
+    }
+    else console.log(this.score+=0);
+
+  if (formData.checkGroup.q2){
+    console.log(this.score+=10)
+    }
+    else console.log(this.score+=0)
   }
+  
+
 }
