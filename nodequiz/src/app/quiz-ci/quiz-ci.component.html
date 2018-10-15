@@ -1,11 +1,20 @@
-<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+<div *ngFor="let item of quiz;jk">
+
+</div>
+
+
+
+<!--
+    LEGACY CODE
+    
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
 
 
   <h1>
   Continuous Integration Quiz
   </h1>
   
-  <!--ANSWER
+  ANSWER
   1 A
   2 B
   3 C
@@ -16,14 +25,14 @@
   8 D
   9 B
   10 C
-  -->
+  
   <div class="container" style="padding-left:20px" ngModelGroup="checkGroup">
   
     <h3>Question 1: What seperates the IT industry from other industries?</h3>
-        <input type="radio" name="q1" value="10" ngModel> IT never stops developing<br>
-        <input type="radio" name="q1" value="0" ngModel> Cost variables<br>  
-        <input type="radio" name="q1" value="0" ngModel> Geographic limitations<br>  
-        <input type="radio" name="q1" value="0" ngModel> Energy requirements<br><br> 
+        <input type="radio" name="q1" ng-value="10" ngModel> IT never stops developing<br>
+        <input type="radio" name="q1" ng-value="0" ngModel> Cost variables<br>  
+        <input type="radio" name="q1" ng-value="0" ngModel> Geographic limitations<br>  
+        <input type="radio" name="q1" ng-value="0" ngModel> Energy requirements<br><br> 
 
     <h3>Question 2: What is the springboard for applications?</h3>
     <input type="radio" value="0" ngModel> Shutdown<br>
@@ -32,7 +41,7 @@
     <input type="radio" value="0" ngModel> Monthly Sales<br><br>
 
     
-  <!--
+  
     <h3>Question 3: _____ is the term for repeated changes being implemented.</h3>
         <input type="radio" name="q3" value="0"> Careful Planning<br>  
         <input type="radio" name="q3" value="0"> Optimal Uptime<br>
@@ -84,12 +93,25 @@
         <input type="radio" name="q10" value="0"> Double check work<br> 
         <input type="radio" name="q10" value="10"> Delegate management positions<br> 
         <input type="radio" name="q10" value="0"> Start work early<br><br>  
-        -->
+        
 
     <button mat-raised-button style="float:right;margin-right: 80px; margin-bottom:80px;" type="submit">Submit</button>
   
+
+<script>
+
+angular.module('formData', [])
+    .controller('checkGroup', ['$scope', function($scope) {
+      $scope.checkboxModel = {
+       value1 : 10,
+       value2 : 'YES'
+     };
+    }]);
+    
+</script>
+    
   
   </div>
 </form>
-
+-->
  

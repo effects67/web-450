@@ -9,17 +9,9 @@ export class QuizCiComponent {
 
 score=0;
 
-onSubmit(formData){
-  if (formData.checkGroup.q1){
-    console.log(this.score+=10);
-    }
-    else console.log(this.score+=0);
+onSubmit(value:any){
 
-  if (formData.checkGroup.q2){
-    console.log(this.score+=10)
-    }
-    else console.log(this.score+=0)
-  }
-  
+
+    console.log(value);
 
 }

@@ -14,6 +14,7 @@ import { QuizCiComponent } from './quiz-ci/quiz-ci.component';
 import { QuizMicroComponent } from './quiz-micro/quiz-micro.component';
 import { QuizTechComponent } from './quiz-tech/quiz-tech.component';
 import { SlideComponent } from './slide/slide.component';
+import { SummaryComponent } from './summary/summary.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { SlideComponent } from './slide/slide.component';
     QuizMicroComponent,
     QuizTechComponent,
     SlideComponent,
+    SummaryComponent,
     
   ],
   imports: [
