@@ -1,6 +1,25 @@
-<div *ngFor="let item of quiz;jk">
 
-</div>
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+
+        <div class="container" style="padding-left:20px">
+             <h1>Continuous Integration Quiz</h1>
+                    <div>Question {{i + 1}}: {{item.question}}</div>
+                    <div *ngFor="let item of answers; let i = index" class="answer">
+                    <mat-radio-group>       
+                        <mat-radio-button name="A" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
+                        <mat-radio-button name="B" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
+                        <mat-radio-button name="C" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
+                        <mat-radio-button name="D" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
+                    </mat-radio-group> 
+                    </div>
+                    </div>
+            <mat-raised-button>Submit</mat-raised-button>
+</form>
+
+
+
+
+
 
 
 
