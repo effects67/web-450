@@ -2,11 +2,14 @@ const express = require('express');
 const path = require('path');
 const createError = require('http-errors');
 const bodyParser = require('body-parser');
+// const path = require('path');
 const morgan = require('morgan');
 const logger = require('./helpers/logger');
 const mongoose = require('mongoose');
-const config = require('./helpers/config');
+// const config = require('./helpers/config');
 const homeRouter = require('./routes/home-router');
+// const quizCi = require ('./models/quizCi');
+
 
 /**
  * MongoDB setup CHANGE THIS PLEASE
@@ -31,10 +34,13 @@ let app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ 'extended': 'false'}));
 app.use(express.static(path.join(__dirname, '../dist/nodequiz')));
+//gives express access to distributable folder...
 app.use('/', express.static(path.join(__dirname, '../dist/nodequiz')));
 app.use(morgan('dev'));
 
 app.use('/api', homeRouter); // wires the homeController to localhost:3000/api
+
+
 
 /**
  * Request handler
@@ -50,6 +56,11 @@ app.use(function (err, req, res, next) {
   logger.debug(err.status);
 
   res.sendStatus(err.status);
+});
+
+
+homeRouter.get('/quizCi', function (req, res){
+  console.log('Get request for quizCi')
 });
 
 module.exports = app;

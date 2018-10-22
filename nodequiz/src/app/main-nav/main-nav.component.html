@@ -32,10 +32,12 @@
       <button mat-button class="mat-button" routerLink="../slide">
         Learning Materials
       </button>
+
+      <button mat-button class="mat-button" routerLink="../login">
+        Login
+      </button>
   
-      <button mat-button class="mat-button">
-          <a class="md" href="https://github.com/effects67/web-425">GitHub</a>
-        </button>
+
   
       <div fxFlex></div>
   
@@ -56,47 +58,6 @@
           <mat-icon>Logout</mat-icon>
           <span>Logout</span>
         </button>
-      </mat-menu>
-      <!--
-      <button mat-button [matMenuTriggerFor]="emotions">Hi, how are you feeling?</button>
-        <mat-menu #emotions="matMenu">
-          <button mat-menu-item [matMenuTriggerFor]="Happy">Happy</button>
-          <button mat-menu-item [matMenuTriggerFor]="Sad">Sad</button>
-          <button mat-menu-item [matMenuTriggerFor]="Angry">Angry</button>
-          <button mat-menu-item [matMenuTriggerFor]="Bored">Bored</button>
-        </mat-menu>
-        -->
-          <mat-menu #Happy="matMenu">
-            <button mat-menu-item [matMenuTriggerFor]="why0">Why?</button>
-          </mat-menu>
-            <mat-menu #why0="matMenu">
-              <button mat-menu-item>Because I love Angular!</button>
-            </mat-menu>
-  
-          <mat-menu #Sad="matMenu">
-            <button mat-menu-item [matMenuTriggerFor]="why1">Why?</button>
-          </mat-menu>
-            <mat-menu #why1="matMenu">
-              <button mat-menu-item>Because Angular is too hard!</button>
-            </mat-menu>
-  
-          <mat-menu #Angry="matMenu">
-            <button mat-menu-item [matMenuTriggerFor]="why2">Why?</button>
-          </mat-menu>
-            <mat-menu #why2="matMenu">
-              <button mat-menu-item>Because I hate Angular!</button>
-            </mat-menu>
-  
-          <mat-menu #Bored="matMenu">
-            <button mat-menu-item [matMenuTriggerFor]="why3">Why?</button>
-          </mat-menu>
-            <mat-menu #why3="matMenu">
-              <button mat-menu-item [matMenuTriggerFor]="try">Because Angular is too easy.</button>
-            </mat-menu>
-            <mat-menu #try="matMenu">
-              <button mat-menu-item>
-                <a class="md1" href="https://mdbootstrap.com/angular/">Try Angular MD</a>
-              </button>
       </mat-menu>
     </mat-toolbar>
     <ng-content></ng-content>

@@ -15,6 +15,9 @@ import { QuizMicroComponent } from './quiz-micro/quiz-micro.component';
 import { QuizTechComponent } from './quiz-tech/quiz-tech.component';
 import { SlideComponent } from './slide/slide.component';
 import { SummaryComponent } from './summary/summary.component';
+// import {PopupModule} from 'ng2-opd-popup';
+
+
 
 
 @NgModule({
@@ -27,6 +30,8 @@ import { SummaryComponent } from './summary/summary.component';
     QuizTechComponent,
     SlideComponent,
     SummaryComponent,
+    // PopupModule.forRoot(),
+
     
   ],
   imports: [

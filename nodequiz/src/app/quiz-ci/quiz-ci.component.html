@@ -1,21 +1,23 @@
+<!--try this
 
-<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
 
-        <div class="container" style="padding-left:20px">
-             <h1>Continuous Integration Quiz</h1>
-                    <div>Question {{i + 1}}: {{item.question}}</div>
-                    <div *ngFor="let item of answers; let i = index" class="answer">
-                    <mat-radio-group>       
-                        <mat-radio-button name="A" [value]= "answer['0' + i]" >{{ answer.answer0 }}</mat-radio-button>  <br>
-                        <mat-radio-button name="B" [value]="answer['1' + i]" >{{ answer.answer1 }}</mat-radio-button>  <br>
-                        <mat-radio-button name="C" [value]="answer['2' + i]" >{{ answer.answer2 }}</mat-radio-button>  <br>
-                        <mat-radio-button name="D" [value]="answer['3' + i]" >{{ answer.answer3 }}</mat-radio-button>  <br>
-                    </mat-radio-group> 
-                    </div>
-                    </div>
-            <mat-raised-button>Submit</mat-raised-button>
+<form #f="ngForm" *ngIf="displayIt" (ngSubmit)="onSubmit(f.value)">
+    <div *ngFor="let item of questions; let i=index" class="question">
+        <h2>Question {{i+1}}: {{item.question}}</h2>
+
+        <mat-radio-group name="group1{{i}}" [(ngModel)]="groups[i]" (ngModelChange)="isAnswered()">
+            <mat-radio-button [displayed]="isDisplayed()" value="a1">{{item.answers[0].a1}}</mat-radio-button>
+            <mat-radio-button [displayed]="isDisplayed()" value="a2">{{item.answers[0].a2}}</mat-radio-button>
+            <mat-radio-button [displayed]="isDisplayed()" value="a3">{{item.answers[0].a3}}</mat-radio-button>
+            <mat-radio-button [displayed]="isDisplayed()" value="a4">{{item.answers[0].a4}}</mat-radio-button>
+        </mat-radio-group>
+
+
+
+    </div>
 </form>
 
+-->
 
 
 
@@ -23,17 +25,9 @@
 
 
 
-<!--
-    LEGACY CODE
-    
-    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
 
 
-  <h1>
-  Continuous Integration Quiz
-  </h1>
-  
-  ANSWER
+  <!-- ANSWER
   1 A
   2 B
   3 C
@@ -43,9 +37,14 @@
   7 A
   8 D
   9 B
-  10 C
+  10 C-->
+ 
   
-  <div class="container" style="padding-left:20px" ngModelGroup="checkGroup">
+  <div class="container" style="padding-left:20px">
+
+    <h1>
+        Continuous Integration Quiz
+        </h1>
   
     <h3>Question 1: What seperates the IT industry from other industries?</h3>
         <input type="radio" name="q1" ng-value="10" ngModel> IT never stops developing<br>
@@ -114,9 +113,11 @@
         <input type="radio" name="q10" value="0"> Start work early<br><br>  
         
 
-    <button mat-raised-button style="float:right;margin-right: 80px; margin-bottom:80px;" type="submit">Submit</button>
+    <button mat-raised-button style="float:right;margin-right: 80px; margin-bottom:80px;" type="submit" (click)="ClickButton()">
+        Submit
+    </button>
   
-
+<!-- this didnt work
 <script>
 
 angular.module('formData', [])
@@ -128,9 +129,10 @@ angular.module('formData', [])
     }]);
     
 </script>
+-->
     
   
   </div>
-</form>
--->
+
+
  

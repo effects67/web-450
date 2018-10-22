@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'quiz_ci', component: QuizCiComponent },
   { path: 'quiz_stream', component: QuizTechComponent },
   { path: 'quiz_micro', component: QuizMicroComponent },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
